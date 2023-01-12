@@ -16,6 +16,11 @@ export default defineConfig({
 				changeOrigin: true,
 				secure: false,
 			},
+			"/members": {
+				target: "http://localhost:4000",
+				changeOrigin: true,
+				secure: false,
+			},
 		},
 		port: 5000,
 	},

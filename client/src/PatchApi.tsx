@@ -1,26 +1,25 @@
 import axios from "axios";
 import { Formik, FormikHelpers, Form, Field } from "formik";
-import React from "react";
-import Input from "./components/Input";
-import FetchApi from "./FetchApi";
-import PatchApi from "./PatchApi";
 
 type formValues = {
 	name: string;
 	email: string;
-	avatar: string;
 };
 
-const App = () => {
-	const initialValues: formValues = { name: "", email: "", avatar: "" };
+const PatchApi = () => {
+	const initialValues: formValues = { name: "", email: "" };
 	const submitHandler = async (
 		values: formValues,
 		_action: FormikHelpers<formValues>
 	) => {
 		try {
+			const res = await fetch("/members");
+			const data = await res.json();
+
+			// update member
 			const r = await fetch("/api/v1/member", {
-				method: "post",
-				body: JSON.stringify(values),
+				method: "PATCH",
+				body: JSON.stringify({ ...values, id: data[0].id }),
 				headers: {
 					"Content-Type": "application/json",
 				},
@@ -35,7 +34,7 @@ const App = () => {
 		<>
 			<div className="container mx-auto py-20 bg-gray-700 h-full">
 				<h1 className="text-5xl pb-10 text-slate-50 text-center">
-					Enter Login Details
+					Enter Member Details
 				</h1>
 				<Formik initialValues={initialValues} onSubmit={submitHandler}>
 					<Form className="flex flex-col bg-amber-500 rounded justify-between py-24 px-32 mx-auto w-2/4">
@@ -62,15 +61,12 @@ const App = () => {
 							type="submit"
 							className="w-80 bg-gray-700 text-white p-4 rounded-md mx-auto hover:bg-gray-500"
 						>
-							Post
+							Patch
 						</button>
 					</Form>
 				</Formik>
-
-				<FetchApi />
-				<PatchApi />
 			</div>
 		</>
 	);
 };
-export default App;
+export default PatchApi;
