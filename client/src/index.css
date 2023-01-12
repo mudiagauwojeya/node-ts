@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	*,
+	*::after,
+	*::before {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	:root {
+		font-size: 62.5%;
+	}
+
+	html,
+	body {
+		font-family: "Lato", sans-serif;
+	}
+
+	body {
+		font-size: 1.7rem;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: "Lora", serif;
+	}
+}
