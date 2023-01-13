@@ -41,6 +41,16 @@
       "id": "8a67675c-2aff-4e0f-8135-da90f69a9415",
       "name": "Juan Doe",
       "email": "juandoe@node.js"
+    },
+    {
+      "id": "d9396d14-6ced-445b-98eb-770429f76960",
+      "name": "Moody Mudiaga",
+      "email": "moody@express.js"
+    },
+    {
+      "id": "26716ffb-3e5a-4af5-9ce6-2ed749c3dfd8",
+      "name": "Naomi Doe",
+      "email": "naonao@wi.fe"
     }
   ]
 }
