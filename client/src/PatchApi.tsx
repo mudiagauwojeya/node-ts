@@ -16,15 +16,10 @@ const PatchApi = () => {
 			const res = await fetch("/members");
 			const data = await res.json();
 
+			const reqBody = { ...values, id: data[0].id };
+
 			// update member
-			const r = await fetch("/api/v1/member", {
-				method: "PATCH",
-				body: JSON.stringify({ ...values, id: data[0].id }),
-				headers: {
-					"Content-Type": "application/json",
-				},
-			});
-			console.log(r);
+			const r = await axios.patch("/api/v1/member", reqBody);
 		} catch (error) {
 			console.error(error, "from log");
 		}
