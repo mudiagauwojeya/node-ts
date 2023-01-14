@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "./helpers/axiosConfig";
 import { Formik, FormikHelpers, Form, Field } from "formik";
 
 type formValues = {
