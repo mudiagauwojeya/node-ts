@@ -1,56 +1,25 @@
 {
-  "users": [
-    {
-      "id": "7620ccefc876dc46ee8799a57837b2cb",
-      "name": "Brittani Crane",
-      "email": "bcrane0@shop-pro.jp",
-      "avatar": "https://robohash.org/estsintet.png?size=50x50&set=set1"
-    },
-    {
-      "id": "fb8500e22b0084cb526ec05f02b35fb6",
-      "name": "Alastair Antognozzii",
-      "email": "aantognozzii1@themeforest.net",
-      "avatar": "https://robohash.org/eiuscupiditateincidunt.png?size=50x50&set=set1"
-    },
-    {
-      "id": "0a84fba7597a52b222cd9f0305f55d27",
-      "name": "Craggie Linskill",
-      "email": "clinskill2@upenn.edu",
-      "avatar": "https://robohash.org/reiciendisbeataenisi.png?size=50x50&set=set1"
-    },
-    {
-      "id": "9469d6f6ff814acbd82203afcbe428da",
-      "name": "Pieter Janas",
-      "email": "pjanas3@clickbank.net",
-      "avatar": "https://robohash.org/nemoomnissit.png?size=50x50&set=set1"
-    },
-    {
-      "id": "98ad7f99a262b277a536a47f7fa447be",
-      "name": "Berti Gorke",
-      "email": "bgorke4@newsvine.com",
-      "avatar": "https://robohash.org/adipisciquisquammaiores.png?size=50x50&set=set1"
-    }
-  ],
-  "members": [
-    {
-      "id": "d0409d92-f558-4ee7-a58b-84277b4ed57e",
-      "name": "John Doe",
-      "email": "johndoe@typescript.ts"
-    },
-    {
-      "id": "8a67675c-2aff-4e0f-8135-da90f69a9415",
-      "name": "Juan Doe",
-      "email": "juandoe@node.js"
-    },
-    {
-      "id": "d9396d14-6ced-445b-98eb-770429f76960",
-      "name": "Moody Mudiaga",
-      "email": "moody@express.js"
-    },
-    {
-      "id": "26716ffb-3e5a-4af5-9ce6-2ed749c3dfd8",
-      "name": "Naomi Doe",
-      "email": "naonao@wi.fe"
-    }
-  ]
+	"users": [],
+	"members": [
+		{
+			"id": "d0409d92-f558-4ee7-a58b-84277b4ed57e",
+			"name": "John Doe",
+			"email": "johndoe@typescript.ts"
+		},
+		{
+			"id": "8a67675c-2aff-4e0f-8135-da90f69a9415",
+			"name": "Juan Doe",
+			"email": "juandoe@node.js"
+		},
+		{
+			"id": "d9396d14-6ced-445b-98eb-770429f76960",
+			"name": "Moody Mudiaga",
+			"email": "moody@express.js"
+		},
+		{
+			"id": "26716ffb-3e5a-4af5-9ce6-2ed749c3dfd8",
+			"name": "Naomi Doe",
+			"email": "naonao@wi.fe"
+		}
+	]
 }
