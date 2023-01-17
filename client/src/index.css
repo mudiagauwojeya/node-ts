@@ -17,6 +17,7 @@
 
 	html,
 	body {
+		@apply bg-stone-400;
 		font-family: "Lato", sans-serif;
 	}
 
@@ -31,5 +32,11 @@
 	h5,
 	h6 {
 		font-family: "Lora", serif;
+	}
+}
+
+@layer utilities {
+	.active {
+		@apply bg-red-300 p-6 rounded-md;
 	}
 }

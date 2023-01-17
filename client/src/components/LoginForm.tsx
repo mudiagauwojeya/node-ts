@@ -1,5 +1,6 @@
 import axios from "axios";
 import { Formik, FormikHelpers, Form, Field } from "formik";
+import Button from "./Button";
 
 type formValues = {
 	email: string;
@@ -18,7 +19,7 @@ const LoginForm = () => {
 
 	return (
 		<>
-			<div className="container mx-auto py-20 bg-gray-700 h-full">
+			<div className="container mx-auto py-20 h-full">
 				<h1 className="text-5xl pb-10 text-slate-50 text-center">
 					Welcome, log in to proceed!
 				</h1>
@@ -41,13 +42,12 @@ const LoginForm = () => {
 								className="bg-gray-50 rounded h-20 w-full pl-4 focus:outline-none focus:bg-gray-200"
 							/>
 						</div>
-
-						<button
+						<Button
 							type="submit"
-							className="w-80 bg-gray-700 text-white p-4 rounded-md mx-auto hover:bg-gray-500"
+							className="w-80 bg-gray-700 text-white p-4 rounded-lg mx-auto hover:bg-gray-500"
 						>
-							Log In
-						</button>
+							Login
+						</Button>
 					</Form>
 				</Formik>
 			</div>

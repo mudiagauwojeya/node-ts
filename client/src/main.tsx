@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import ErrorPage from "./components/ErrorPage";
 import LoginForm from "./components/LoginForm";
+import Index from "./components/Index";
 
 const router = createBrowserRouter([
 	{
@@ -13,15 +14,17 @@ const router = createBrowserRouter([
 		errorElement: <ErrorPage />,
 		children: [
 			{
-				path: "",
+				path: "/login",
+				element: <LoginForm />,
+			},
+			{
+				index: true,
+				element: <Index />,
 			},
 		],
 	},
-	{
-		path: "/login",
-		element: <LoginForm />,
-	},
 ]);
+
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
 	<React.StrictMode>
 		<RouterProvider router={router} />
