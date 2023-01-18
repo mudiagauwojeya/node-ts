@@ -1,6 +1,8 @@
 import axios from "axios";
 import { Formik, FormikHelpers, Form, Field } from "formik";
 import Button from "./Button";
+import { useAppDispatch, useAppSelector } from "../types/hooks";
+import { getUser } from "../store/slices/user/userSlice";
 
 type formValues = {
 	email: string;
@@ -8,12 +10,15 @@ type formValues = {
 };
 
 const LoginForm = () => {
+	const user = useAppSelector((state) => state.user.user);
+	const dispatch = useAppDispatch();
 	const initialValues: formValues = { email: "", password: "" };
 	const submitHandler = async (
 		values: formValues,
 		_action: FormikHelpers<formValues>
 	) => {
 		try {
+			dispatch(getUser("/api/v1/users"));
 		} catch (error) {}
 	};
 

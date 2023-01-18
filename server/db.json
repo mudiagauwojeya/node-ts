@@ -1,5 +1,10 @@
 {
-	"users": [],
+	"users": [
+		{
+			"name": "John Doe",
+			"email": "johndoe@typescript.ts"
+		}
+	],
 	"members": [
 		{
 			"id": "d0409d92-f558-4ee7-a58b-84277b4ed57e",
